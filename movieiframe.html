@@ -13,11 +13,11 @@
     const urlParams = new URLSearchParams(window.location.search);
     const link = urlParams.get('link');
 
-    const iframe = document.fromString(`
+    const iframe = document.insertAdjacentHTML("beforeend", `
     <iframe src="${link}" width="100%" height="100%"></iframe>
     `);
 
-    document.insertAdjacentHtml("beforeend", iframe);
+    document.appendChild(iframe);
   </script>
 </body>
 
