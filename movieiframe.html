@@ -15,7 +15,11 @@
     const link = urlParams.get('link');
 
     document.getElementById("frame").insertAdjacentHTML("beforeend", `
-    <iframe rameborder="0" hspace="0" vspace="0" marginheight="0" marginwidth="0" style="border: none;" src="${link}" width="100%" height="100%"></iframe>
+    <iframe allowfullscreen="allowfullscreen"
+        mozallowfullscreen="mozallowfullscreen" 
+        msallowfullscreen="msallowfullscreen" 
+        oallowfullscreen="oallowfullscreen" 
+        webkitallowfullscreen="webkitallowfullscreen" frameborder="0" hspace="0" vspace="0" marginheight="0" marginwidth="0" style="border: none;" src="${link}" width="100%" height="100%"></iframe>
     `);
   </script>
   <style>
